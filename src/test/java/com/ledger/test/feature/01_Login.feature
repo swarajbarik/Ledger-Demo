@@ -7,7 +7,7 @@ Feature: This feature is to test the login functionality
     And user enters username as "testing@web.com"
     And user enters password as "test123"
     And user click on Sign In button
-    Then user verifies the user should display as "Test User 008"
+    Then user verifies the user should display as "Test User 007"
 
   @login
   Scenario Outline: Verify login functionality for <Description>

@@ -1,0 +1,47 @@
+<html lang="en" dir="ltr"><head>
+        <title>GE Single Sign On</title>
+        <!-- <title>GE Single Sign On</title> -->
+    <base href="https://fssfedpitc.ge.com/fss/">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <style>
+        #postButton {
+                    }
+    </style>
+    <link rel="stylesheet" type="text/css" href="/fss/assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/fss/assets/css/ge-inspira-fonts.css">
+    <link rel="icon" href="/fss/assets/images/ge-favicon.ico">
+
+        <link rel="stylesheet" type="text/css" href="/fss/assets/css/ge.css">
+    <script>
+        var forgetSSOLink = 'https://mypassword.ge.com/fp/forgotUserID.xhtml';
+        var signUpLink = 'https://mypassword.ge.com/fp/ssoRegistration.xhtml';
+        var forgetPasswordLink = 'https://mypassword.ge.com/fp/forgetPassword.xhtml';
+        var sSOFAQLink = 'https://nextgen.ge-registrar.com/b2bregistration/index.html#/faqs';
+        var modifyAccountLink = 'https://mypassword.ge.com/passwordRecoverySettings.xhtml?sourcePage=RSO&idmMessage=yes';
+
+        if (window.location.host.indexOf('stage') !== -1) {
+            forgetSSOLink = 'https://qa.mypassword.ge.com/fp/forgotUserID.xhtml';
+            signUpLink = 'https://qa.mypassword.ge.com/fp/ssoRegistration.xhtml';
+            forgetPasswordLink = 'https://qa.mypassword.ge.com/fp/forgetPassword.xhtml';
+            sSOFAQLink = 'https://staging.nextgen.ge-registrar.com/b2bregistration/index.html#/faqs';
+            modifyAccountLink = 'https://qa.mypassword.ge.com/passwordRecoverySettings.xhtml?faces-redirect=true&sourcePage=RSO&idmMessage=yes';
+        }
+        window.addEventListener('DOMContentLoaded', function () {
+            var link = document.getElementById("forget-sso");
+            link.setAttribute('href', forgetSSOLink);
+
+            var link = document.getElementById("sign-up");
+            link.setAttribute('href', signUpLink);
+
+            var link = document.getElementById("forget-pass");
+            link.setAttribute('href', forgetPasswordLink);
+
+            var link = document.getElementById("sso-FAQ");
+            link.setAttribute('href', sSOFAQLink);
+
+            var link = document.getElementById("modify-account");
+            link.setAttribute('href', modifyAccountLink);
+        });
+    </script></head></html>

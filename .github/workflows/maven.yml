@@ -23,5 +23,5 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven
-      run: mvn clean install test -D"cucumber.filter.tags=@e2e"
+      run: mvn clean install test -D"cucumber.filter.tags=@e2e" -Dselenide.headless=true
 

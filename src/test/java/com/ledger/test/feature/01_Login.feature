@@ -23,3 +23,8 @@ Feature: This feature is to test the login functionality
       | Blank Email               |                 | test     | email can't be blank         |
       | Blank Password            | test@email.com  |          | password can't be blank      |
       | Wrong Username & Password | testing@web.com | INVALID  | email or password is invalid |
+
+  @api_login
+  Scenario: Verify login functionality using api
+    When user requests for token with "valid" details
+    Then verify status code as "200"

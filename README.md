@@ -13,8 +13,12 @@ Run:
   As per the requirement
   ```
     mvn clean test -D"cucumber.filter.tags=@e2e"
-    ```
+  ```
   To Run on headless mode 
   ```
     mvn clean test -D"cucumber.filter.tags=@e2e" -Dselenide.headless=true
  
+```
+  To Run on authentication using api
+  ```
+    mvn clean test -D"cucumber.filter.tags=@api_login"

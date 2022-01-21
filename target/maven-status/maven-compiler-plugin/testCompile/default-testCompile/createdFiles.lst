@@ -1,8 +1,8 @@
-com\ledger\test\stepDefinitions\LoginStep.class
-com\ledger\test\locators\LoginPage.class
-com\ledger\test\runner\TestRunner.class
-com\ledger\test\locators\AddPostPage.class
-com\ledger\test\stepDefinitions\AddPostStep.class
-com\ledger\test\locators\FavoritesPage.class
-com\ledger\test\stepDefinitions\FavoritesStep.class
-com\ledger\test\stepDefinitions\Hooks.class
+com/ledger/test/locators/FavoritesPage.class
+com/ledger/test/stepDefinitions/AddPostStep.class
+com/ledger/test/locators/AddPostPage.class
+com/ledger/test/stepDefinitions/LoginStep.class
+com/ledger/test/stepDefinitions/FavoritesStep.class
+com/ledger/test/runner/TestRunner.class
+com/ledger/test/locators/LoginPage.class
+com/ledger/test/stepDefinitions/Hooks.class

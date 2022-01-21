@@ -4,9 +4,11 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import static com.codeborne.selenide.Selenide.*;
+import static org.junit.Assert.assertEquals;
 
 import org.openqa.selenium.By;
 
+import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.WebDriverRunner;
 import com.ledger.test.locators.LoginPage;
 
@@ -42,6 +44,12 @@ public class LoginStep {
 	@Then("user verifies the user should display as {string}")
 	public void user_verifies_the_user_should_display_as(String userName) {
 		$(By.xpath(LoginPage.USER_PROFILE)).shouldHave(text(userName));
+	}
+
+	@Then("user verifies the error message as {string}")
+	public void user_verifies_the_error_message_as(String expectedMessage) {
+	    String actualMessage = $(LoginPage.ERROR).getText();
+	    assertEquals(expectedMessage, actualMessage);
 	}
 
 }
